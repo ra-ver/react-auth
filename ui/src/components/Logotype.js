@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 class Logotype extends React.Component {
   render() {
-    return <span className="logotype">GitStar</span>;
+    return <span className="logotype"> OAuth Client Application </span>;
   }
 }
 

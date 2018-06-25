@@ -6,7 +6,7 @@ var url = require('url'),
   express = require('express'),
   app = express();
 
-var TRUNCATE_THRESHOLD = 1,
+var TRUNCATE_THRESHOLD = 300,
   REVEALED_CHARS = 200,
   REPLACEMENT = '***';
 
@@ -93,7 +93,7 @@ app.all('*', function (req, res, next) {
 });
 
 app.get('/authenticate/:code', function (req, res) {
-  log('authenticating code:', req.params.code, true);
+  log('authenticating code:', req.params.code, false);
   authenticate(req.params.code, function (err, token) {
     var result
     if (err || !token) {
@@ -105,7 +105,7 @@ app.get('/authenticate/:code', function (req, res) {
       result = {
         "token": token
       };
-      log("token", result.token, true);
+      log("token", result.token, false);
     }
     res.json(result);
   });

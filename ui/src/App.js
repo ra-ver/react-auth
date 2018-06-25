@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import { STATUS, Loading, Avatar, Logo, Logotype, Container, Header } from './components';
+import { RingLoader } from 'react-spinners';
 
 const CLIENT_ID = 'cb7c093e336355f7d036';
 const REDIRECT_URI = 'http://localhost:3000/';
@@ -51,7 +52,7 @@ class App extends Component {
             }}
             href={`https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=user&redirect_uri=${REDIRECT_URI}`}
           >
-            Login{' '}
+            Authorize{' '}
           </a>{' '}
         </Header>{' '}
         <Loading
