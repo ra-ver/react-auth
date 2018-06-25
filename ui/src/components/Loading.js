@@ -24,7 +24,15 @@ class Loading extends React.Component {
               position: 'absolute',
             }}
           >
-            <span className="loading"> Authorization Process Complete </span>{' '}
+            {this.props.token && (
+              <span className="loading">
+                {' '}
+                Authorization successfully completed with token: {this.props.token}{' '}
+              </span>
+            )}{' '}
+            {typeof this.props.token === 'undefined' && (
+              <span className="loading"> Authorization not successfull </span>
+            )}{' '}
           </div>
         )}{' '}
       </div>

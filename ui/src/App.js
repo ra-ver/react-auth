@@ -57,6 +57,7 @@ class App extends Component {
         </Header>{' '}
         <Loading
           status={this.state.status}
+          token={this.state.token}
           callback={() => {
             if (this.props.status !== STATUS.AUTHENTICATED) {
               this.setState({
