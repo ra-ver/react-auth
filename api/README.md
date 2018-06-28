@@ -1,7 +1,6 @@
 # Fence Auth Client
 
 [Forked from Gatekeeper](https://github.com/prose/gatekeeper)
-Because of some [security-related limitations]
 
 ## API
 

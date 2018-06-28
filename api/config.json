@@ -1,6 +1,6 @@
 {
   "oauth_client_id": "ErXdwNUgWfk3vhEobdICL9M2tgE8IKqseErlbrtY",
-  "oauth_client_secret": "",
+  "oauth_client_secret": "a14t3IiAnPRyNoawEw3O6xkvc1CFBeek3I24b9av2yh24sRaiCvLjgy",
   "oauth_host": "gen3qa.kids-first.io",
   "oauth_redirect_uri": "http://localhost:3000",
   "oauth_grant_type": "authorization_code",
