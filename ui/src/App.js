@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import { STATUS, Loading, Avatar, Logo, Logotype, Container, Header } from './components';
-import { RingLoader } from 'react-spinners';
 
 const CLIENT_ID = 'ErXdwNUgWfk3vhEobdICL9M2tgE8IKqseErlbrtY';
 const REDIRECT_URI = 'http%3A%2F%2Flocalhost%3A3000';

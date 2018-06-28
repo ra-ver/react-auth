@@ -30,6 +30,7 @@ class Loading extends React.Component {
                   {' '}
                   Authorization completed successfully.Token details:{' '}
                 </span>{' '}
+                {console.log(JSON.parse(this.props.token))}{' '}
                 <ReactJson src={JSON.parse(this.props.token)} theme="monokai" />
               </div>
             )}{' '}
