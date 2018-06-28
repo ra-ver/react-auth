@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ReactJson from 'react-json-view';
 import STATUS from './status';
 
 import './Loading.css';
@@ -25,10 +25,13 @@ class Loading extends React.Component {
             }}
           >
             {this.props.token && (
-              <span className="loading">
-                {' '}
-                Authorization successfully completed with token: {this.props.token}{' '}
-              </span>
+              <div>
+                <span className="loading">
+                  {' '}
+                  Authorization completed successfully.Token details:{' '}
+                </span>{' '}
+                <ReactJson src={JSON.parse(this.props.token)} theme="monokai" />
+              </div>
             )}{' '}
             {typeof this.props.token === 'undefined' && (
               <span className="loading"> Authorization not successfull </span>
