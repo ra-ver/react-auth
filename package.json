@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "description": "OAuth client application with react front end",
   "scripts": {
-    "api": "cd api && yarn start",
-    "ui": "cd ui && yarn start",
-    "launch": "yarn api & yarn ui"
+    "api": "cd api && npm start",
+    "ui": "cd ui && npm start",
+    "launch": "npm run api & npm run ui"
   },
   "author": "ra-ver",
   "license": "ISC",

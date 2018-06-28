@@ -1,5 +1,5 @@
 {
-  "name": "Gatekeeper",
+  "name": "api",
   "description": "Enables client-side applications to dance OAuth with GitHub.",
   "website": "",
   "repository": "",

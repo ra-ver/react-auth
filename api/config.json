@@ -1,9 +1,11 @@
 {
-  "oauth_client_id": "cb7c093e336355f7d036",
-  "oauth_client_secret": "0972513e6a85c2364ebfd2f8d10d41513b609254",
-  "oauth_host": "github.com",
+  "oauth_client_id": "ErXdwNUgWfk3vhEobdICL9M2tgE8IKqseErlbrtY",
+  "oauth_client_secret": "",
+  "oauth_host": "gen3qa.kids-first.io",
+  "oauth_redirect_uri": "http://localhost:3000",
+  "oauth_grant_type": "authorization_code",
   "oauth_port": 443,
-  "oauth_path": "/login/oauth/access_token",
+  "oauth_path": "/user/oauth2/token",
   "oauth_method": "POST",
   "port": 9999
 }

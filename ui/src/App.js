@@ -3,8 +3,10 @@ import React, { Component } from 'react';
 import { STATUS, Loading, Avatar, Logo, Logotype, Container, Header } from './components';
 import { RingLoader } from 'react-spinners';
 
-const CLIENT_ID = 'cb7c093e336355f7d036';
-const REDIRECT_URI = 'http://localhost:3000/';
+const CLIENT_ID = 'ErXdwNUgWfk3vhEobdICL9M2tgE8IKqseErlbrtY';
+const REDIRECT_URI = 'http%3A%2F%2Flocalhost%3A3000';
+const SCOPE = 'openid';
+const RESPONSE_TYPE = 'code';
 
 class App extends Component {
   state = {
@@ -50,7 +52,7 @@ class App extends Component {
             style={{
               display: this.state.status === STATUS.INITIAL ? 'inline' : 'none',
             }}
-            href={`https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=user&redirect_uri=${REDIRECT_URI}`}
+            href={`https://gen3qa.kids-first.io/user/oauth2/authorize?client_id=${CLIENT_ID}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}&redirect_uri=${REDIRECT_URI}`}
           >
             Authorize{' '}
           </a>{' '}

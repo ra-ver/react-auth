@@ -1,5 +1,5 @@
 default:
-	yarn
+	npm install
 	cd api && npm install
-	cd ui && yarn
+	cd ui && npm install
 	
