@@ -19,11 +19,8 @@ class Loading extends React.Component {
           </div>
         )}{' '}
         {this.props.status === STATUS.FINISHED_LOADING && (
-          <div
-            style={{
-              position: 'absolute',
-            }}
-          >
+          <div>
+            {' '}
             {this.props.token && (
               <div>
                 <span className="loading">
