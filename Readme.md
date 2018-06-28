@@ -6,13 +6,14 @@
 
   ```json
   {
-    "oauth_client_id": "GITHUB_APPLICATION_CLIENT_ID",
-    "oauth_client_secret": "GITHUB_APPLICATION_CLIENT_SECRET",
-    "oauth_host": "github.com",
+    "oauth_client_id": "CLIENT_ID",
+    "oauth_client_secret": "CLIENT_SECRET",
+    "oauth_host": "HOST",
+    "oauth_redirect_uri": "http://localhost:3000",
+    "oauth_grant_type": "authorization_code",
     "oauth_port": 443,
-    "oauth_path": "/login/oauth/access_token",
-    "oauth_method": "POST",
-    "port": 9999
+    "oauth_path": "TOKEN_URL",
+    "oauth_method": "POST"
   }
   ```
 
